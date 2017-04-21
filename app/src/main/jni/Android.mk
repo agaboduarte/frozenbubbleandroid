@@ -70,6 +70,6 @@ LOCAL_SRC_FILES := fastmix.cpp \
 		snd_fx.cpp \
 		sndfile.cpp \
 		sndmix.cpp \
-		jni_stubs.cpp 
+		jni_stubs.cpp
 
 include $(BUILD_SHARED_LIBRARY)
