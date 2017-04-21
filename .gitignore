@@ -38,4 +38,3 @@ proguard/
 
 # Python Compiler files
 *.pyc
-/app/.externalNativeBuild/ndkBuild
