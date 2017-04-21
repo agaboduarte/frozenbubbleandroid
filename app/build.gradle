@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 12
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "org.jfedor.frozenbubble"
+        minSdkVersion 12
+        targetSdkVersion 12
+
+        ndk {
+            moduleName "modplug-1.0"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path '../../frozenbubbleandroid/jni/Android.mk'
+        }
+    }
+}
